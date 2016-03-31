@@ -1,25 +1,2 @@
-- name: Creating user {{ aws_user }}
-  user: name={{ aws_user }} uid={{ aws_user_uid }} state=present
-  sudo: yes
-
-- name: Installing required packages of Amazone Web Services console
-  action: yum name={{ item }} state=installed
-  with_items: aws_dependencies
-  sudo: yes
-  
-- name: Installing AWS python module
-  pip: name=awscli state=present
-  sudo: yes
-
-- name: Creating AWS directory for required user
-  file: path=~/.aws state=directory
-  sudo: yes
-  sudo_user: '{{ aws_user }}'
-  
-- name: Configuring AWS client for required user
-  template: src=config dest=~/.aws/config
-  sudo: yes
-  sudo_user: '{{ aws_user }}'
-
-  
-
+---
+# tasks file for aws-client2

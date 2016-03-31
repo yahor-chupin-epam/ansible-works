@@ -1,9 +1,2 @@
-aws_user: root
-aws_user_uid: '{{ user_uids[aws_user] }}'
-output_format: text
-region: eu-west-1
-aws_access_key_id: ""
-aws_secret_access_key: ""
-
-aws_dependencies:
-  - python-pip
+---
+# vars file for aws-client2
