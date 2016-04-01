@@ -13,3 +13,5 @@ galaxy_info:
     - aws
     - awc-cli
     - aws-client
+dependencies:
+    []
