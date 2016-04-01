@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Yahor Chupin
+  description: TODO.
+  company: my-comapny
+  license: BSD
+  min_ansible_version: 1.9
+  platforms:
+  - name: EL
+    versions:
+    - all
+  galaxy_tags:
+    - aws
+    - awc-cli
+    - aws-client
