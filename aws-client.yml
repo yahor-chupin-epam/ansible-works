@@ -1,6 +1,0 @@
-- name: Install AWS client
-  hosts: all
-
-  roles:
-
-    - role: aws-client
